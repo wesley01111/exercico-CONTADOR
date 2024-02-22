@@ -16,6 +16,7 @@ section{
 }
 #resposta{
     margin-top: 10px;
+    padding-left: 5PX;
     background-color: rgb(1, 82, 82);
     border-radius: 20px;
 }

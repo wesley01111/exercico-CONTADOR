@@ -8,6 +8,7 @@ function contador(){
 
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         window.alert('Falta dados!')
+        res.innerHTML ='digite novamente!'
     } else {
             res.innerHTML=`contando:` 
 
@@ -18,17 +19,17 @@ function contador(){
             if ( i < f ){
                 //contagem crescente
                 for (let c = i; c <= f; c += p ) {
-                res.innerHTML += `${c}`;
+                res.innerHTML += `${c}\u{1F449}`;
                 }
 
             } else {
                 //contagem regressiva
                 for (let c = i; c >= f; c -= p) {
-                    res.innerHTML += `${c}`
+                    res.innerHTML += `${c} \u{1F449}`
                     
                 }
-
-            
-        }
+            }
+           
+         res.innerHTML += `FIM!`
     }
 }
